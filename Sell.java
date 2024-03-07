@@ -1,0 +1,27 @@
+public class Sell extends JFrame
+{
+    public static JLabel label;
+    public static JLabel label1;
+    public static JLabel label2;
+ 
+    Sell()
+    {
+        super("Продажа");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setSize(270, 300);
+         
+        Container container = getContentPane();
+        container.setLayout (new FlowLayout(FlowLayout.CENTER));
+        
+        JPanel panel = new JPanel();
+        label = new JLabel("-");
+        panel.add(label);
+        
+        JPanel panel1 = new JPanel();
+        label1 = new JLabel("-");
+        panel1.add(label1);
+        
+        container.add(label);
+        container.add(label1);
+       
+    } 
